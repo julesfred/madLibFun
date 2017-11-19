@@ -1,0 +1,134 @@
+body {
+    background-color: #444444;
+}
+
+.picture {
+    background-image: url("marker.jpg");
+    height: 703px;
+    width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    position: relative;
+}
+
+.controller{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    font-family: 'Rock Salt', cursive;
+    font-size: 40px;
+    padding: 5px 25px 5px 25px;
+    height: 10px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.30);
+    text-decoration: none;
+}
+
+a:active {
+    color: #C75454;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgba(199, 84, 84, 0.8);
+    font-size: 125px;
+    font-family: 'Rock Salt', cursive;
+    float: right;
+    margin-top: 25px;
+    margin-left: -100px;
+    -ms-transform: rotate(25deg); 
+    -webkit-transform: rotate(25deg); 
+    transform: rotate(25deg);
+}
+
+h1:hover {
+    -webkit-animation-name: spin; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotate(25deg); }
+    to {transform: rotate(-30deg);
+        color: #000000;}
+}
+
+/* Standard syntax */
+@keyframes spin {
+    from {-webkit-transform: rotate(25deg); }
+    to {transform: rotate(-30deg);
+        color: #000000;}
+}
+
+.madLibForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    left: 53%;
+    top: 30%;
+}
+
+input{
+    width: 400px;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 25px;
+    font-family: 'Rock Salt', cursive;
+    color: black; 
+    background: none;
+    border-bottom: dotted 5px #000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 48px;
+    background-color: #C75454;
+    color: white;
+    border: dotted 5px white;
+    border-radius: 5px;
+    font-family: 'Rock Salt', cursive;
+}
+
+button:hover {
+    background-color: white;;
+    color: #C75454;
+    border: dotted 5px #C75454;
+    border-radius: 5px;
+}
+
+p{
+    font-family: 'Rock Salt', cursive;
+    color: black;
+    font-size: 20px;
+    margin-right: 25px;
+}
